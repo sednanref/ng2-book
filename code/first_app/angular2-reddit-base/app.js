@@ -30,7 +30,8 @@ System.register(['@angular/platform-browser-dynamic', '@angular/core'], function
                 RedditApp = __decorate([
                     core_1.Component({
                         selector: 'reddit',
-                        template: "\n\t\t<form class=\"ui large form segment\">\n\t\t\t<h3 class=\"ui header\">Add a Link</h3>\n\n\t\t\t<div class=\"field\">\n\t\t\t\t<label for=\"title\">Title:</label>\n\t\t\t\t<input name=\"title\" #newtitle>\n\t\t\t</div>\n\t\t\t<div class=\"field\">\n\t\t\t\t<label for=\"link\">Link:</label>\n\t\t\t\t<input name=\"link\" #newlink>\n\t\t\t</div>\n\t\t\t<button (click)=\"addArticle(newtitle, newlink)\"\n\t\t\t\tclass=\"ui positive right floated button\">\n\t\t\t\tSubmit link\n\t\t\t</button>\n\t\t</form>\n\t"
+                        directives: [ArticleComponent],
+                        template: "\n\t\t<form class=\"ui large form segment\">\n\t\t\t<h3 class=\"ui header\">Add a Link</h3>\n\n\t\t\t<div class=\"field\">\n\t\t\t\t<label for=\"title\">Title:</label>\n\t\t\t\t<input name=\"title\" #newtitle>\n\t\t\t</div>\n\t\t\t<div class=\"field\">\n\t\t\t\t<label for=\"link\">Link:</label>\n\t\t\t\t<input name=\"link\" #newlink>\n\t\t\t</div>\n\t\t\t<button (click)=\"addArticle(newtitle, newlink)\"\n\t\t\t\tclass=\"ui positive right floated button\">\n\t\t\t\tSubmit link\n\t\t\t</button>\n\t\t</form>\n\t\t\n\t\t<div class=\"ui grid posts\">\n\t\t\t<reddit-article>\n\t\t\t</reddit-article>\n\t\t</div>\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], RedditApp);
