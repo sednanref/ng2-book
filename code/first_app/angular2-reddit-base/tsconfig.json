@@ -11,6 +11,7 @@
   },
   "files": [
     "app.ts",
+    "app-02.ts",
     "typings/browser.d.ts"
   ],
   "exclude": [

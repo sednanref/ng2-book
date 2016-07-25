@@ -1,5 +1,6 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { Component } from '@angular/core';
+import { ArticleComponent} from './app-02.';
 
 @Component({
 	selector: 'reddit',
