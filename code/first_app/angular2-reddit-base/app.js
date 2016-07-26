@@ -37,7 +37,7 @@ System.register(['@angular/platform-browser-dynamic', '@angular/core'], function
             }());
             ArticleComponent = (function () {
                 function ArticleComponent() {
-                    this.article = new Article('Angular 2', 'http://angular.io', 10);
+                    this.article = new Article('Angular 2', 'http://angular.io');
                 }
                 ArticleComponent.prototype.voteUp = function () {
                     this.article.voteUp();
@@ -50,6 +50,7 @@ System.register(['@angular/platform-browser-dynamic', '@angular/core'], function
                 ArticleComponent = __decorate([
                     core_1.Component({
                         selector: 'reddit-article',
+                        inputs: ['article'],
                         host: {
                             class: 'row'
                         },
